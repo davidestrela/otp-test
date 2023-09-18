@@ -28,6 +28,10 @@ jobs:
           node-version: 16
           registry-url: https://registry.npmjs.org/
       - run: npm ci
-      - run: npm publish
+      - run: |
+          npm run build --if-present
+          cp package.json ./dist
+          cd ./dist
+          npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}

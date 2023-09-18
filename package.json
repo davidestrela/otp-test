@@ -1,7 +1,6 @@
 {
-  "name": "@destrela/otp-test",
-  "version": "0.0.2",
-  "private": true,
+  "name": "otp-test-2",
+  "version": "0.0.4",
   "description": "Node.js module to generate and validate sms otp's",
   "license": "UNLICENSED",
   "author": "@destrela",
